@@ -1,12 +1,12 @@
-def perform_operation(num1, num2, operations):
+def perform_operation(num1, num2, operation):
 
-  if operations == "+":
+  if operation == "+":
     return num1 + num2
-  elif operations == "-":
+  elif operation == "-":
     return num1 - num2
-  elif operations == "*":
+  elif operation == "*":
     return num1 * num2
-  elif operations == "/":
+  elif operation == "/":
     if num1 == 0 or num2 == 0:
       return ("Cannot divide by zero. Kindly provide nonzero values")
     else:
