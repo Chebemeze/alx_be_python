@@ -16,7 +16,7 @@ while True:
     temp = float(input("Enter the temperature to convert: "))
     break
   except ValueError:
-    print("Failed to convert, kindly provide a valid number")
+    print("Invalid temperature. Please enter a numeric value.")
 
 temp_degree = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").lower()
 match temp_degree:
