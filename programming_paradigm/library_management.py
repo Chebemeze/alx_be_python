@@ -26,23 +26,20 @@ class Library:
     self._books = []
     self._checked_out_books = []
 
+# Add book method. Adds book oject to a list.
   def add_book(self, book):
     self._books.append(book)
 
+# Check out method. adds it to checked out list then removes the specified object from the available list.
   def check_out_book(self, title):
 
-    # i = 0
     for book in self._books:
       if book.title == title and book.is_available():
-        # self.a = book[i]
         self._checked_out_books.append(book)
         self._books.remove(book)
-        # del self._book[len(self._book) - i]
         book.check_out()
 
-      # i += 1
-        
-
+  # Return removed books method.
   def return_book(self, title):
 
     for book in self._checked_out_books:
@@ -50,6 +47,7 @@ class Library:
         self._books.append(book)
         book.return_book()
   
-  def list_available_books (self):
+  # List available books method.
+  def list_available_books(self):
     for book in self._books:
       print(book)
