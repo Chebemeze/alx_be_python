@@ -18,7 +18,3 @@ class Circle(Shape):
 
   def area(self):
     return self.pie * pow(self.radius, 2)
-
-# pie = math.pi
-# a = pie * pow(3, 2)
-# print(a)
